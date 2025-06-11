@@ -6,12 +6,14 @@ FUNCTION Z_ABAP_PARALLEL.
 *"  EXPORTING
 *"     VALUE(EV_TASK_ASXML) TYPE  XSTRING
 *"----------------------------------------------------------------------
-  DATA lo_task TYPE REF TO zif_abap_parallel.
+  DATA lo_task   TYPE REF TO zif_abap_parallel.
+  DATA lo_erreur TYPE REF TO cx_root.
 
   TRY.
       CALL TRANSFORMATION id SOURCE XML iv_task_asxml
            RESULT data = lo_task.
-    CATCH cx_root INTO DATA(lo_erreur) ##NEEDED.
+    CATCH cx_root INTO lo_erreur ##NEEDED.
+      " TODO
       ASSERT 1 = 1. " Debug helper to set a break-point
   ENDTRY.
 
