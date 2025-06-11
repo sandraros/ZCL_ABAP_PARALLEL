@@ -4,7 +4,7 @@
   <asx:values>
    <VSEOCLASS>
     <CLSNAME>ZCX_ABAP_PARALLEL_NO_CHECK</CLSNAME>
-    <LANGU>F</LANGU>
+    <LANGU>E</LANGU>
     <DESCRIPT>Parallel processing exception</DESCRIPT>
     <CATEGORY>40</CATEGORY>
     <STATE>1</STATE>
@@ -14,7 +14,7 @@
    </VSEOCLASS>
    <DESCRIPTIONS_CLASS>
     <SEOCLASSTX>
-     <LANGU>F</LANGU>
+     <LANGU>E</LANGU>
      <DESCRIPT>Parallel processing exception</DESCRIPT>
     </SEOCLASSTX>
    </DESCRIPTIONS_CLASS>
